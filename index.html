@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="kaiju.css">
+    <title>Kaiju Incremental</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <div class="container-fluid">
+                <div class="nav flex-column nav-pills" id="nav-tabs" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="combat-tab" data-toggle="pill" href="#combat-content" role="tab" aria-controls="combat-content" aria-selected="true">Combat</a>
+                    <a class="nav-link" id="mecha-tab" data-toggle="pill" href="#mecha-content" role="tab" aria-controls="mecha-content" aria-selected="false">Mecha</a>
+                    <a class="nav-link" id="pilots-tab" data-toggle="pill" href="#pilots-content" role="tab" aria-controls="pilots-content" aria-selected="false">Pilots</a>
+                    <a class="nav-link" id="settings-tab" data-toggle="pill" href="#settings-content" role="tab" aria-controls="settings-content" aria-selected="false">Settings</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container-fluid">
+                <div class="tab-content" id="nav-tabs-content">
+                    <div class="tab-pane fade show active" id="combat-content" role="tabpanel" aria-labelledby="combat-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col"></div>
+                                <div class="col text-center">
+                                    <div>Small Kaiju</div>
+                                    <div>Health: <span id="kaijuhealthtext">0</span> / <span id="kaijuhealthmaxtext">0</span></div>
+                                    <div class="progress health">
+                                        <div class="progress-bar health" id="kaijuhealth"></div>
+                                    </div>
+                                    <br>
+                                    <div>Mecha 1</div>
+                                    <div>Health: <span id="mecha0healthtext">0</span> / <span id="mecha0healthmaxtext">0</span></div>
+                                    <div class="progress health">
+                                        <div class="progress-bar health" id="mecha0health"></div>
+                                    </div>
+                                </div>
+                                <div class="col"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="mecha-content" role="tabpanel" aria-labelledby="mecha-tab">Mecha</div>
+                    <div class="tab-pane fade" id="pilots-content" role="tabpanel" aria-labelledby="pilots-tab">Pilots</div>
+                    <div class="tab-pane fade" id="settings-content" role="tabpanel" aria-labelledby="settings-tab">Settings</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="system.js"></script>
+</body>
+</html>

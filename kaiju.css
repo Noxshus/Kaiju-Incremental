@@ -1,0 +1,13 @@
+.container { /*removing bootstrap defaults*/
+    margin: 0px !important;
+}
+
+.progress.health {
+    height: 5px;
+    background-color: #d9534f;
+}
+
+.progress-bar.health {
+    height: 5px;
+    background-color: #5cb85c;
+}
