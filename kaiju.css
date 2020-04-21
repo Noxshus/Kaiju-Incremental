@@ -17,3 +17,13 @@
     height: 5px;
     background-color: #5cb85c;
 }
+
+.progress.energy {
+    height: 5px;
+    background-color: #f7f7f7;
+}
+
+.progress-bar.energy {
+    height: 5px;
+    background-color: #f0ad4e;
+}
