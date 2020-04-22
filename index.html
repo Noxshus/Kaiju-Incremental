@@ -29,19 +29,8 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col text-center">                                   
-                                    <div id="kaiju0block" class="d-none">
-                                        <div id="kaiju0name">Kaiju Placeholder</div>
-                                        <div>Health: <span id="kaiju0healthtext">0</span> / <span id="kaiju0healthmaxtext">0</span></div>
-                                        <div class="progress health">
-                                            <div class="progress-bar health" id="kaiju0health"></div>
-                                        </div>
-                                        <div id="kaiju0attacktext">Attack!</div>
-                                    </div>
-                                    <br>
-                                </div>
-                                <div class="col text-center">
-                                    <div id="kaiju1block" class="d-none">
-                                        <div id="kaiju1name">Small Kaiju</div>
+                                    <div id="kaiju1block" class="invisible">
+                                        <div id="kaiju1name">Kaiju Placeholder</div>
                                         <div>Health: <span id="kaiju1healthtext">0</span> / <span id="kaiju1healthmaxtext">0</span></div>
                                         <div class="progress health">
                                             <div class="progress-bar health" id="kaiju1health"></div>
@@ -49,24 +38,21 @@
                                         <div id="kaiju1attacktext">Attack!</div>
                                     </div>
                                     <br>
+                                </div>
+                                <div class="col text-center">
+                                    <div id="kaiju0block" class="invisible">
+                                        <div id="kaiju0name">Small Kaiju</div>
+                                        <div>Health: <span id="kaiju0healthtext">0</span> / <span id="kaiju0healthmaxtext">0</span></div>
+                                        <div class="progress health">
+                                            <div class="progress-bar health" id="kaiju0health"></div>
+                                        </div>
+                                        <div id="kaiju0attacktext">Attack!</div>
+                                    </div>
+                                    <br>
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col">
-                                                <div id="mecha0block" class="d-none">
-                                                    <div id="mecha0name">Mecha 0</div>
-                                                    <div>Health: <span id="mecha0healthtext">0</span> / <span id="mecha0healthmaxtext">0</span></div>
-                                                    <div class="progress health">
-                                                        <div class="progress-bar health" id="mecha0health"></div>
-                                                    </div>
-                                                    <div>Energy: <span id="mecha0energytext">0</span> / <span id="mecha0energymaxtext">0</span></div>
-                                                    <div class="progress energy">
-                                                        <div class="progress-bar energy" id="mecha0energy"></div>
-                                                    </div>
-                                                    <div id="mecha0attacktext">Attack!</div>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div id="mecha1block" class="d-none">
+                                                <div id="mecha1block" class="invisible">
                                                     <div id="mecha1name">Mecha 1</div>
                                                     <div>Health: <span id="mecha1healthtext">0</span> / <span id="mecha1healthmaxtext">0</span></div>
                                                     <div class="progress health">
@@ -80,7 +66,21 @@
                                                 </div>
                                             </div>
                                             <div class="col">
-                                                <div id="mecha2block" class="d-none">
+                                                <div id="mecha0block" class="invisible">
+                                                    <div id="mecha0name">Mecha 0</div>
+                                                    <div>Health: <span id="mecha0healthtext">0</span> / <span id="mecha0healthmaxtext">0</span></div>
+                                                    <div class="progress health">
+                                                        <div class="progress-bar health" id="mecha0health"></div>
+                                                    </div>
+                                                    <div>Energy: <span id="mecha0energytext">0</span> / <span id="mecha0energymaxtext">0</span></div>
+                                                    <div class="progress energy">
+                                                        <div class="progress-bar energy" id="mecha0energy"></div>
+                                                    </div>
+                                                    <div id="mecha0attacktext">Attack!</div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div id="mecha2block" class="invisible">
                                                     <div id="mecha2name">Mecha 2</div>
                                                     <div>Health: <span id="mecha2healthtext">0</span> / <span id="mecha2healthmaxtext">0</span></div>
                                                     <div class="progress health">
@@ -97,7 +97,7 @@
                                     </div>
                                 </div>
                                 <div class="col text-center">
-                                    <div id="kaiju2block" class="d-none">
+                                    <div id="kaiju2block" class="invisible">
                                         <div id="kaiju2name">Kaiju Placeholder</div>
                                         <div>Health: <span id="kaiju2healthtext">0</span> / <span id="kaiju2healthmaxtext">0</span></div>
                                         <div class="progress health">
@@ -125,5 +125,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="system.js"></script>
+<script src="combat.js"></script>
+<script src="names.js"></script>
 </body>
 </html>
