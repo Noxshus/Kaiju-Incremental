@@ -11,5 +11,7 @@ var mechaNames = [
 ]
 
 var kaijuNames = [
-    "Lilith", "Amon", "Abaddon", "Abraxas", "Akuma", "Anammelech", "Archon", "Asmodeus", "Astaroth", "Asura", "Azazel", 
+    "Amon", "Abaddon", "Abraxas", "Akuma", "Anammelech", "Archon", "Asmodeus", "Astaroth", "Asura", "Azazel",
+    "Bael", "Bakasura", "Baku", "Balberith", "Baphomet", "Barbatos", "Beelzebub", "Belial", "Boruta", "Bune",
+    
 ]

@@ -11,7 +11,7 @@ var global = { //NOT saved between sessions
 
 }
 
-function Mecha(_name, _health, _energy, _speed)
+function Mecha(_name, _health, _energy, _speed, _evasion)
 {
     this.name = _name;
     this.health = _health;
@@ -20,28 +20,31 @@ function Mecha(_name, _health, _energy, _speed)
     this.energyMax = _energy;
     this.speed = _speed;
     this.speedAccumulated = 0; //for each turn that a unit doesn't act, their speed value is added to this, until it's the highest value
-    this.weapon0 = new Weapon("Tank Gun", 1000, "Projectile", 60, 1, 10);
+    this.evasion = _evasion;
+    this.weapon0 = new Weapon("Tank Gun", 1000, "Projectile", 1, 1, 2, 50);
 }
 
-function Weapon(_name, _damage, _type, _rateOfFire, _magazine, _reloadTime)
+function Weapon(_name, _damage, _type, _numberOfAttacks, _magazine, _reloadTime, _accuracy)
 {
     this.name = _name;
     this.damage = _damage;
     this.type = _type;
-    this.rateOfFire = _rateOfFire; //per minute
+    this.numberOfAttacks = _numberOfAttacks; //number of attacks that can be made with this weapon in one turn
     this.magazine = _magazine;
     this.magazineCurrent = _magazine;
-    this.reloadTime = _reloadTime; //in seconds
+    this.reloadTime = _reloadTime; //in turns
+    this.accuracy = _accuracy;
 }
 
-function Kaiju(_name, _health, _speed)
+function Kaiju(_name, _health, _speed, _evasion)
 {
     this.name = _name;
     this.health = _health;
     this.healthMax = _health;
     this.speed = _speed;
     this.speedAccumulated = 0;
-    this.weapon0 = new Weapon("Kaiju Punch", 500, "Melee", 2, 0, 0);
+    this.evasion = _evasion;
+    this.weapon0 = new Weapon("Kaiju Punch", 500, "Melee", 1, 0, 0, 100);
 }
 
 window.onload = function() 
@@ -75,15 +78,15 @@ window.onload = function()
 
 
 
-function AddMecha(_name, _health, _energy, _speed) //adds a Mecha into the mecha array
+function AddMecha(_name, _health, _energy, _speed, _evasion) //adds a Mecha into the mecha array
 {
-    let _mecha = new Mecha(_name, _health, _energy, _speed);
+    let _mecha = new Mecha(_name, _health, _energy, _speed, _evasion);
     data.mecha.push(_mecha);
 }
 
-function AddKaiju(_name, _health, _speed) //as above, but for Kaiju
+function AddKaiju(_name, _health, _speed, _evasion) //as above, but for Kaiju
 {
-    let _kaiju = new Kaiju(_name, _health, _speed);
+    let _kaiju = new Kaiju(_name, _health, _speed, _evasion);
     data.kaiju.push(_kaiju);
 }
 
